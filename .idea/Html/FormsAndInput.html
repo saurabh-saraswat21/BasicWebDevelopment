@@ -8,57 +8,67 @@
 <body>
 <h2> A Basic form for entering personal details</h2>
 <form>
+    <label for="firstName"> FirstName</label>
     <div>
-        First Name:-<input type=text>
+        <input id=firstName name="firstName" type=text>
     </div>
     <!-- Using br  tag is not recommended writing this comment to change it by using css-->
     <br>
+    <label for="lastName"> LastName</label>
     <div>
-        Last Name:-<input type=text>
+        <input id=lastName name="lastName" type=text>
     </div>
     <br>
+    <label for="address"> address</label>
     <div>
-        Address:-<input type=text>
+        <input id=address name="address" type=text>
     </div>
 
     <br>
-
-    <br>
+    <label for="about">Write About Yourself</label>
     <div>
-        write about yourself<br> <textarea></textarea>
+        <br> <textarea id=about name="about"> </textarea>
         <p><small> <em> click and drag the bottom right corner to expand the write area</em></small></p>
     </div>
     <br>
     <!--    Change the  type  in future-->
+    <label for="phone"> Phone</label>
     <div>
-        Phone : <input type="number">
+        <input id="phone" name="phone" type="number">
     </div>
     <br>
+    <label for="email">Email Address</label>
     <div>
-        Email:-<input type="email">
+        <input id=email name="email" type="email">
     </div>
     <br>
+    <label for="password"> Password</label>
     <div>
-        password :-<input type=password>
+        <input id=password type=password>
     </div>
 <br>
     <div>
-    Gender:
-    Male: <input type="radio"   name = "Gender" value="male" >
-    Female:   <input type="radio"   name = "Gender"  value = "female">
-    Other <input type="radio"   name = "Gender"  value = "Other">
+        Gender:
+        <label for="m"> Male</label>
+        <input id=m name="Gender" type="radio" value="male">
+        <label for="f">Female</label>
+        <input id=f name="Gender" type="radio" value="female">
+        <label for="Other">Other</label>
+        <input id=Other name="Gender" type="radio" value="Other">
     </div>
 <br>
     <div>
-      Are you Above 18 <input type="checkbox">
+        <label for="ageEligible">Are you Above 18</label>
+        <input id="ageEligible" type="checkbox">
     </div>
     <br>
     <div>
-        Select your course <select>
-        <option value="BBA">BBA</option>
-        <option value="B.tech">B.tech</option>
-        <option value="Diploma">Diploma</option>
-    </select>
+        <label for="course">Select your course</label>
+        <select id="course" name="mycourse">
+            <option value="BBA">BBA</option>
+            <option value="B.tech">B.tech</option>
+            <option value="Diploma">Diploma</option>
+        </select>
     </div>
     <br>
     <div>
