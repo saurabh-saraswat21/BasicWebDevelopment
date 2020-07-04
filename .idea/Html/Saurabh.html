@@ -14,18 +14,50 @@
     <meta name ="robots" content="INDEX , FOLLOW">
 <!--    to link external css file-->
     <link rel="stylesheet" href="../../saurabh.css">
+    <style>
+        .Header{
+            background-color: rgb(117, 167, 229);
+            border: 2px solid black;
+            width : 350px;
+            box-sizing: border-box;
+            padding: 12px;
+
+            margin: auto;
+        }
+        .subheading{
+            float: initial;
+            width: 350px;
+            background-color: #efa5a5;
+            border: 2px solid #2b0c0c;
+            font-size: 20px;
+            font-family:"Book Antiqua";
+            border-spacing: 20px;
+            margin: auto;
+            padding: 10px;
+            box-sizing: border-box;
+
+
+        }
+        #mainHeading{
+            font-family: cursive,"Arial Rounded MT Bold",sans-serif,Impact;
+            color: white;
+        }
+        #images{
+
+        }
+    </style>
     <title>Title of the page</title>
 
 </head>
 
 <body>
-<h2> A simple navigation panel</h2>
-<div>
+<h2 id="mainHeading" class = "Header" > A simple navigation panel</h2>
+<div id="images"class="subheading">
 <a href="ImagesAndLink.html" target=" "> Images and links </a>
 </div>
-<div><a href="HeadingsAndParagraph.html" target=" ">Headings And Paragraph</a></div>
-<div><a href="TablesAndList.html" target=" ">Tables And Lists</a></div>
-<div><a href="FormsAndInput.html" target=" ">Forms</a></div>
-<div><a href="IdAndClasses.html" target=" ">Id and classes</a></div>
+<div id="Headings"class="subheading"><a href="HeadingsAndParagraph.html" target=" ">Headings And Paragraph</a></div>
+<div id="Tables" class="subheading"><a href="TablesAndList.html" target=" ">Tables And Lists</a></div>
+<div id="Headings"class="subheading"><a href="FormsAndInput.html" target=" ">Forms</a></div>
+<div id="idClass"class="subheading"><a href="IdAndClasses.html" target=" ">Id and classes</a></div>
 </body>
 </html>
