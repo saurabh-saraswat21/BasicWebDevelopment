@@ -1,6 +1,7 @@
 //require dependencies
 const express = require ('express');
 const mongoose = require('mongoose');
+var bodyParser = require('body-parser')
 
 // initializig app
 const app = express();
@@ -18,6 +19,7 @@ app.use(express.static('public'))
 //templating engine
 app.set('view engine','ejs')
 
+app.use(bodyParser.urlencoded({extended:true}))
 
 //using controllers
 todoController(app);

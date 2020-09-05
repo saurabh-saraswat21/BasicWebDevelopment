@@ -23,10 +23,17 @@ module.exports=(app)=>{
 
     app.get('/',(req,res)=>{
         res.render('todo',{todolist:list});
-        console.log("homepage loaded")
     })
-    app.post('/additem',(req,res)=>{
+    app.post('/',(req,res)=>{
+        
+        console.log(req.body);
+        res.redirect('/')
 
+    })
+    app.post('/delete',(req,res)=>{
+        console.log(req.body)
+        res.send("hello")
+        
     })
 
 }

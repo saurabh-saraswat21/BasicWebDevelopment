@@ -1,28 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Candal|Chewy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Stylesheets/body.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 </head>
+
 <body>
     <%- include ('./partials/navbar.ejs') %>
-    <div class="todo-table">
-        <form action="#">
-            <input type="text" name="todo" placeholder="Add new Todo">
-            <button type="submit"> Add</button>
+    <div class="todo-container">
+        <form action="/" method="POST" class="todo-header">
+            <input type="text" name="content">
+            <button type="submit"><span class="fas fa-plus"></span></button>
         </form>
-
-    <ul>
-    <% for(var i=0;i<todolist.length;i++){ %>
-
-        <li> <%= todolist[i].item %> </li>
-        
-
-        <% }    %>
-    </ul>
-
+        <ul class="todo-list">
+            <li class="todo-list-item">
+                <div class="todo-list-item-name">Some Text</div>
+                <a href="" class="edit">
+                    <span class="fas fa-edit"></span>
+                </a>
+                <a href="" class="remove">
+                    <span class="fas fa-times"></span>
+                </a>
+            </li>
+        </ul>
     </div>
-    
+    </div>
+
 </body>
+
 </html>
