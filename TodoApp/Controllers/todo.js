@@ -5,10 +5,13 @@ module.exports=(app)=>{
     const todoModal = Mongoose.model('todos',models.todoSchema)
 
     app.get('/',(req,res)=>{
-        res.render('todo');
+        todoModal.find({} ,(err,data)=>{
+
+            res.render('todo',{todos:data});
+        })
     })
     app.post('/', (req,res)=>{
-        
+
         var newtodo = todoModal({todo:req.body.content})
         newtodo.save().then((result) => {
             console.log("new todo created")
