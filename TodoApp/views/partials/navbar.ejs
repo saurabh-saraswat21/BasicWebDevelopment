@@ -5,37 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My-Todo-App</title>
+
+    <!-- full path of stylesheet is not required as we already set the static folder to public -->
+    <link rel="stylesheet" href="Stylesheets/navbar.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <div class="navbar">
+        <!-- Logo of the todo app -->
+        <header class="header">
+            <h2><a href="/" class="logo"> <img src="#">MyTo-Do-app</a></h2>
+        
         <nav>
-            <!-- Logo of the todo app -->
-            <a href="/" class="logo"> <img src="#" alt="app logo here"></a>
-
-            <!--  Hamburger icon-->
-            <a href="#"><i class="fa fa-align-justify"></i></a>
-
             <!-- navigation list -->
-            <div class="nav-menu">
-
-                <ul class="nav-menu-list">
-                    
-                    <li class="nav-menu items"> <a href="#">Home</a> </li>
-                    <li class="nav-menu items"><a href="#">About us</a></li>
-                    
-
-                </ul>
-
-            </div>
-
-
-
-
+            <ul class="main-nav">
+                <li><a href="/">Home</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
         </nav>
-    </div>
-
+    
+</header>
 </body>
 
 </html>
