@@ -1,7 +1,7 @@
 module.exports=(app)=>{
 
     app.get('/',(req,res)=>{
-        res.send("hello world")
+        res.render('todo');
         console.log("homepage loaded")
     })
 
