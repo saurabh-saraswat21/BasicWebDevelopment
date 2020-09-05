@@ -150,7 +150,10 @@
    
    font-size: 25px;
    }
-   
+   .todo-list-item input {
+   font-size: x-large;
+}
+
 }
 
 
