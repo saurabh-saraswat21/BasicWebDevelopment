@@ -131,7 +131,7 @@
 
 */
 
-@media(min-width: 480px){
+@media(max-width: 480px){
    body{
       font-size: xx-large;
    }
@@ -152,8 +152,5 @@
    }
    .todo-list-item input {
    font-size: x-large;
-}
-
-}
-
+}}
 
