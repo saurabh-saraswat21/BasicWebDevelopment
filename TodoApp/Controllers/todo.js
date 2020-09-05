@@ -1,34 +1,19 @@
-var list =[
-    
-        {item:'todo1'},
-        {
-
-            item:'todo2'
-        },
-        {
-
-            item:'todo3'
-        },
-        {
-
-            item:'todo4'
-        }
-
-    
-]
-
-
+const  Mongoose  = require('mongoose');
 
 module.exports=(app)=>{
+    const models = require('../Models/toDoDatabase')
+    const todoModal = Mongoose.model('todos',models.todoSchema)
 
     app.get('/',(req,res)=>{
-        res.render('todo',{todolist:list});
+        res.render('todo');
     })
-    app.post('/',(req,res)=>{
+    app.post('/', (req,res)=>{
         
-        console.log(req.body);
-        res.redirect('/')
-
+        var newtodo = todoModal({todo:req.body.content})
+        newtodo.save().then((result) => {
+            console.log("new todo created")
+            res.redirect('/')
+        })
     })
     app.post('/delete',(req,res)=>{
         console.log(req.body)
