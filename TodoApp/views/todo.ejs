@@ -10,21 +10,21 @@
 
 <body>
     <div class="todo-container">
-        <h2>To-Do List</h2>
+        <h2>Your-Todos</h2>
         <div class="todo">
             <form action="/" method="POST" class="todo-header">
                 <input type="text" name="content">
-                <button type="submit"><span class="fas fa-plus"></span></button>
+                <button type="submit"><span class="fas fa-plus">ADD</span></button>
             </form>
             <ul class="todo-list">
                 <% todos.forEach(todo => { %>
                 <li class="todo-list-item">
                 <div class="todo-list-item-name"><%= todo.todo %></div>
-                <a href="/edit/<%= todo._id %>" class="edit">
+                <a href="/edit/<%= todo._id %>" class="edit">Edit
                 <span class="fas fa-edit"></span>
                 </a>
                 <a href="/remove/<%= todo._id %>" class="remove">
-                <span class="fas fa-times"></span>
+                <span class="fas fa-times">Delete</span>
                 </a>
                 </li>
                 <% }) %>
