@@ -20,7 +20,7 @@
     top:50%;
     left: 50%;
     padding: 20px;
-    width: 600px;
+    width: 900px;
     transform: translate(-50%,-50%);
     background: #03b3e9;
     border-radius: 40px;
@@ -30,7 +30,7 @@
     }
 
     .todo {
-    width: 400px;
+    width: 600px;
     }
 
 
@@ -124,3 +124,33 @@
     cursor:pointer;
     text-decoration: none;
     }
+
+
+/* 
+    MEDIA QUERIES
+
+*/
+
+@media(min-width: 480px){
+   body{
+      font-size: xx-large;
+   }
+   
+   .todo-container {
+      width:100%;
+      top:30%;
+   
+   }
+   .todo-header input{
+      height: 70px;
+   }
+   .todo-list-item button {
+   height: 80px;
+   width:90px;
+   
+   font-size: 25px;
+   }
+   
+}
+
+
