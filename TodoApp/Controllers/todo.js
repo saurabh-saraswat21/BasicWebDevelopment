@@ -18,14 +18,6 @@ module.exports = (app) => {
             res.redirect('/')
         })
     })
-    app.post('/delete', (req, res) => {
-        console.log(req.body)
-        res.send("hello")
-
-    })
-
-
-
 
     app
         .route("/edit/:id")
